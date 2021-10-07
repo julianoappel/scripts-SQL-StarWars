@@ -1,3 +1,4 @@
+~~~sql
 CREATE TABLE Planetas(
 	IdPlaneta int NOT NULL,
 	Nome varchar(200) NOT NULL,
@@ -67,4 +68,5 @@ CREATE TABLE HistoricoViagens(
 GO
 
 ALTER TABLE HistoricoViagens ADD CONSTRAINT FK_HistoricoViagens_PilotosNaves FOREIGN KEY (IdPiloto, IdNave) REFERENCES PilotosNaves (IdPiloto, IdNave)
-GO 
+GO
+~~~
